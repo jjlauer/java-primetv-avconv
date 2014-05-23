@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mfizz</groupId>
+    <artifactId>mfz-primetv-avconv</artifactId>
+    <packaging>pom</packaging>
+    <version>0.10.0.2</version>
+    <name>mfz-primetv-avconv</name>
+    <description>Native executables avconv and avprobe to be easily embedded and used from Java as a dependency.</description>
+  
+    <parent>
+        <groupId>com.mfizz</groupId>
+        <artifactId>mfz-maven-parent</artifactId>
+        <version>1.7</version>
+    </parent>
+    
+    <!-- include jne directory as a resource in final jar -->
+    <build>
+        <resources>
+            <resource>
+                <directory>jne</directory>
+                <targetPath>jne</targetPath>
+            </resource>
+        </resources>
+    </build>
+
+    <modules>
+        <module>mfz-primetv-avconv-core</module>
+		<!-- avconv binaries -->
+        <module>mfz-primetv-avconv-windows-x32</module>
+        <module>mfz-primetv-avconv-linux-x32</module>
+        <module>mfz-primetv-avconv-osx-x64</module>
+        <module>mfz-primetv-avconv-all</module>
+		<!-- avprobe binaries -->
+        <module>mfz-primetv-avprobe-windows-x32</module>
+        <module>mfz-primetv-avprobe-linux-x32</module>
+        <module>mfz-primetv-avprobe-osx-x64</module>
+        <module>mfz-primetv-avprobe-all</module>
+		<!-- demo of both -->
+        <module>mfz-primetv-avconv-demo</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.mfizz</groupId>
+            <artifactId>mfz-jne</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+    </dependencies>
+    
+    <properties>
+        <license.skip>true</license.skip>
+        <main.java.package></main.java.package>
+    </properties>
+</project>

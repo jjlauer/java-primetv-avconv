@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mfizz</groupId>
+    <artifactId>mfz-primetv-avconv-core</artifactId>
+    <packaging>jar</packaging>
+    <name>mfz-primetv-avconv-core</name>
+    <description>Core for mfz-primetv-avconv</description>
+  
+    <parent>
+        <groupId>com.mfizz</groupId>
+        <artifactId>mfz-primetv-avconv</artifactId>
+        <version>0.10.0.2</version>
+    </parent>
+
+    <dependencies>
+        <!-- compile -->
+        <!-- provided -->
+        <!-- testing -->
+    </dependencies>
+
+    <properties>
+        <license.skip>true</license.skip>
+        <main.java.package>com.mfizz.primetv.avconv</main.java.package>
+    </properties>
+</project>

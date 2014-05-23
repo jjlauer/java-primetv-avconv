@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mfizz</groupId>
+    <artifactId>mfz-primetv-avconv-all</artifactId>
+    <packaging>jar</packaging>
+    <name>mfz-primetv-avconv-all</name>
+    <description>All libraries in mfz-primetv-avconv</description>
+  
+    <parent>
+        <groupId>com.mfizz</groupId>
+        <artifactId>mfz-primetv-avconv</artifactId>
+        <version>0.10.0.2</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.mfizz</groupId>
+            <artifactId>mfz-primetv-avconv-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mfizz</groupId>
+            <artifactId>mfz-primetv-avconv-linux-x32</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mfizz</groupId>
+            <artifactId>mfz-primetv-avconv-osx-x64</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mfizz</groupId>
+            <artifactId>mfz-primetv-avconv-windows-x32</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <license.skip>true</license.skip>
+        <main.java.package></main.java.package>
+    </properties>
+</project>
